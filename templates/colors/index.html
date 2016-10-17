@@ -1,6 +1,6 @@
 <a  ng-repeat="color in colorsCtrl.colors"
     ng-style="{'background-color': '#' + color.hex}"
     class="btn btn-default col-xs-12 col-sm-4"
-    ng-href="/colors/{{$index}}">
+    ng-href="#/colors/{{$index}}">
     {{ color.name }}
 </a>

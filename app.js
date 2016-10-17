@@ -9,21 +9,21 @@ function config(   $routeProvider,   $locationProvider  ) {
   // Setup Routes
   $routeProvider
     .when('/', {
-      templateUrl: '/templates/colors/index.html',
+      templateUrl: 'templates/colors/index.html',
       controller: 'ColorsIndexController',
       controllerAs: 'colorsCtrl'
     })
     .when('/colors/:index', {
-      templateUrl: '/templates/colors/show.html',
+      templateUrl: 'templates/colors/show.html',
       controller: 'ColorsShowController',
       controllerAs: 'colorCtrl'
     })
 
   // using html5Mode means we don't have /#/colors in our URL
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
+  // $locationProvider.html5Mode({
+  //   enabled: true,
+  //   requireBase: false
+  // });
 }
 
 ColorsIndexController.$inject = [];
